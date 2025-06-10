@@ -19,5 +19,7 @@ public sealed class StreetAddressOverride : AutoFakerOverride<StreetAddress>
         target.State = context.Faker.Address.StateAbbr();
         target.PostalCode = context.Faker.Address.ZipCode();
         target.Country = "US";
+        target.Region = null;
+        target.AdditionalInfo = null;
     }
 }
