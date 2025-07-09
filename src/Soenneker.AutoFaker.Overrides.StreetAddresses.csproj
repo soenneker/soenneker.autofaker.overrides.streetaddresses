@@ -43,6 +43,6 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Utils.AutoBogus" Version="3.0.787" />
-        <PackageReference Include="Soenneker.Utils.Dtos.StreetAddress" Version="3.0.1052" />
+        <PackageReference Include="Soenneker.Utils.Dtos.StreetAddress" Version="3.0.1053" />
     </ItemGroup>
 </Project>
