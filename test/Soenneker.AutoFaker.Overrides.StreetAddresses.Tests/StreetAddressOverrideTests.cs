@@ -1,11 +1,10 @@
-﻿using Soenneker.Tests.Unit;
-using Xunit;
+using Soenneker.Tests.Unit;
 
 namespace Soenneker.AutoFaker.Overrides.StreetAddresses.Tests;
 
 public sealed class StreetAddressOverrideTests : UnitTest
 {
-    [Fact]
+    [Test]
     public void Default()
     {
 
