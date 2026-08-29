@@ -3,11 +3,16 @@
 [![](https://img.shields.io/nuget/dt/soenneker.autofaker.overrides.streetaddresses.svg?style=for-the-badge)](https://www.nuget.org/packages/soenneker.autofaker.overrides.streetaddresses/)
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.autofaker.overrides.streetaddresses/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.autofaker.overrides.streetaddresses/actions/workflows/codeql.yml)
 
-# ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.AutoFaker.Overrides.StreetAddresses
-### An AutoFaker (AutoBogus) override for the DTO StreetAddress
+# Soenneker.AutoFaker.Overrides.StreetAddresses
 
-## Installation
+An AutoFaker (AutoBogus) override for the DTO StreetAddress.
 
-```
+## Install
+
+```bash
 dotnet add package Soenneker.AutoFaker.Overrides.StreetAddresses
 ```
+
+## What you get
+
+- `StreetAddressOverride` — An AutoFaker (AutoBogus) override for the DTO StreetAddress.
