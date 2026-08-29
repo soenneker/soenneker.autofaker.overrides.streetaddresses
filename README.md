@@ -5,14 +5,25 @@
 
 # Soenneker.AutoFaker.Overrides.StreetAddresses
 
-An AutoFaker (AutoBogus) override for the DTO StreetAddress.
+An AutoFaker override for generating US-style `StreetAddress` fixtures.
 
-## Install
+## Installation
 
 ```bash
 dotnet add package Soenneker.AutoFaker.Overrides.StreetAddresses
 ```
 
-## What you get
+## Usage
 
-- `StreetAddressOverride` — An AutoFaker (AutoBogus) override for the DTO StreetAddress.
+```csharp
+using Soenneker.AutoFaker.Overrides.StreetAddresses;
+using Soenneker.Dtos.StreetAddress;
+using Soenneker.Utils.AutoBogus;
+
+var autoFaker = new AutoFaker();
+autoFaker.Config.Overrides = [new StreetAddressOverride()];
+
+StreetAddress address = autoFaker.Generate<StreetAddress>();
+```
+
+The override fills street, city, state abbreviation, and ZIP code, sets `Country` to `US`, and sometimes supplies `Line2`. `Region` and `AdditionalInfo` are cleared. The values are synthetic and are not validated as a real deliverable address.
